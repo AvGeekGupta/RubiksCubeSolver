@@ -1,0 +1,2 @@
+E:\RubiksCubeSolver\SolvingApplication\Debug\SolvingApplication.exe
+E:\RubiksCubeSolver\SolvingApplication\Debug\SolvingApplication.pdb
