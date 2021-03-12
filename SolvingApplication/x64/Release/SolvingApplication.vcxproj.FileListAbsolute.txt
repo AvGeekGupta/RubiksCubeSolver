@@ -1,0 +1,4 @@
+E:\RubiksCubeSolver\SolvingApplication\x64\Release\SolvingApplication.MainForm.resources
+E:\RubiksCubeSolver\SolvingApplication\x64\Release\SolvingApplication.vcxproj.GenerateResource.cache
+E:\RubiksCubeSolver\SolvingApplication\x64\Release\SolvingApplication.exe
+E:\RubiksCubeSolver\SolvingApplication\x64\Release\SolvingApplication.vcxprojAssemblyReference.cache
