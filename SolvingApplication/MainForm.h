@@ -1,3 +1,5 @@
+#include"Cube.h";
+
 #pragma once
 
 namespace SolvingApplication {
@@ -21,6 +23,7 @@ namespace SolvingApplication {
 			//
 			//TODO: Add the constructor code here
 			//
+            Cube^ rubiksCube = gcnew Cube();
 		}
 
 	protected:
@@ -34,43 +37,25 @@ namespace SolvingApplication {
 				delete components;
 			}
 		}
-	private: System::Windows::Forms::Label^ headerLabel;
+	
 	protected:
-
+    private: System::Windows::Forms::Label^ headerLabel;
 	private: System::Windows::Forms::Button^ exitButton;
 	private: System::Windows::Forms::Label^ scanFacesLabel;
     private: System::Windows::Forms::Button^ redScanButton;
     private: System::Windows::Forms::Button^ orangeScanButton;
-
-
     private: System::Windows::Forms::Button^ yellowScanButton;
-
     private: System::Windows::Forms::Button^ whiteScanButton;
-
     private: System::Windows::Forms::Button^ blueScanButton;
-
     private: System::Windows::Forms::Button^ greenScanButton;
-
     private: System::Windows::Forms::Button^ solveCubeButton;
     private: System::Windows::Forms::Button^ solveOnRobotButton;
-
-
     private: System::Windows::Forms::Label^ solutionLabel;
     private: System::Windows::Forms::TextBox^ solutionTextbox;
-
-
-
     private: System::Windows::Forms::Button^ saveSolutionButton;
     private: System::Windows::Forms::Button^ reverseSolutionButton;
     private: System::Windows::Forms::Button^ randomizeCubeButton;
-
-
-
     private: System::Windows::Forms::Button^ closeButton;
-
-    protected:
-
-	protected:
 
 	private:
 		/// <summary>
@@ -141,7 +126,7 @@ namespace SolvingApplication {
             this->exitButton->Margin = System::Windows::Forms::Padding(0);
             this->exitButton->Name = L"exitButton";
             this->exitButton->Size = System::Drawing::Size(63, 37);
-            this->exitButton->TabIndex = 1;
+            this->exitButton->TabIndex = 12;
             this->exitButton->Text = L"Exit";
             this->exitButton->TextAlign = System::Drawing::ContentAlignment::TopLeft;
             this->exitButton->UseVisualStyleBackColor = false;
@@ -157,7 +142,7 @@ namespace SolvingApplication {
             this->scanFacesLabel->Location = System::Drawing::Point(12, 114);
             this->scanFacesLabel->Name = L"scanFacesLabel";
             this->scanFacesLabel->Size = System::Drawing::Size(180, 46);
-            this->scanFacesLabel->TabIndex = 2;
+            this->scanFacesLabel->TabIndex = 0;
             this->scanFacesLabel->Text = L"Scan Faces";
             // 
             // redScanButton
@@ -179,7 +164,7 @@ namespace SolvingApplication {
             this->redScanButton->Margin = System::Windows::Forms::Padding(0);
             this->redScanButton->Name = L"redScanButton";
             this->redScanButton->Size = System::Drawing::Size(128, 39);
-            this->redScanButton->TabIndex = 3;
+            this->redScanButton->TabIndex = 1;
             this->redScanButton->Text = L"Red";
             this->redScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->redScanButton->UseVisualStyleBackColor = false;
@@ -203,7 +188,7 @@ namespace SolvingApplication {
             this->orangeScanButton->Margin = System::Windows::Forms::Padding(0);
             this->orangeScanButton->Name = L"orangeScanButton";
             this->orangeScanButton->Size = System::Drawing::Size(128, 43);
-            this->orangeScanButton->TabIndex = 4;
+            this->orangeScanButton->TabIndex = 6;
             this->orangeScanButton->Text = L"Orange";
             this->orangeScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->orangeScanButton->UseVisualStyleBackColor = false;
@@ -251,7 +236,7 @@ namespace SolvingApplication {
             this->whiteScanButton->Margin = System::Windows::Forms::Padding(0);
             this->whiteScanButton->Name = L"whiteScanButton";
             this->whiteScanButton->Size = System::Drawing::Size(128, 38);
-            this->whiteScanButton->TabIndex = 6;
+            this->whiteScanButton->TabIndex = 4;
             this->whiteScanButton->Text = L"White";
             this->whiteScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->whiteScanButton->UseVisualStyleBackColor = false;
@@ -275,7 +260,7 @@ namespace SolvingApplication {
             this->blueScanButton->Margin = System::Windows::Forms::Padding(0);
             this->blueScanButton->Name = L"blueScanButton";
             this->blueScanButton->Size = System::Drawing::Size(128, 37);
-            this->blueScanButton->TabIndex = 7;
+            this->blueScanButton->TabIndex = 3;
             this->blueScanButton->Text = L"Blue";
             this->blueScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->blueScanButton->UseVisualStyleBackColor = false;
@@ -299,7 +284,7 @@ namespace SolvingApplication {
             this->greenScanButton->Margin = System::Windows::Forms::Padding(0);
             this->greenScanButton->Name = L"greenScanButton";
             this->greenScanButton->Size = System::Drawing::Size(128, 38);
-            this->greenScanButton->TabIndex = 8;
+            this->greenScanButton->TabIndex = 2;
             this->greenScanButton->Text = L"Green";
             this->greenScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->greenScanButton->UseVisualStyleBackColor = false;
@@ -323,7 +308,7 @@ namespace SolvingApplication {
             this->solveCubeButton->Margin = System::Windows::Forms::Padding(0);
             this->solveCubeButton->Name = L"solveCubeButton";
             this->solveCubeButton->Size = System::Drawing::Size(187, 39);
-            this->solveCubeButton->TabIndex = 9;
+            this->solveCubeButton->TabIndex = 7;
             this->solveCubeButton->Text = L"Solve Cube";
             this->solveCubeButton->TextAlign = System::Drawing::ContentAlignment::TopRight;
             this->solveCubeButton->UseVisualStyleBackColor = false;
@@ -347,7 +332,7 @@ namespace SolvingApplication {
             this->solveOnRobotButton->Margin = System::Windows::Forms::Padding(0);
             this->solveOnRobotButton->Name = L"solveOnRobotButton";
             this->solveOnRobotButton->Size = System::Drawing::Size(187, 39);
-            this->solveOnRobotButton->TabIndex = 10;
+            this->solveOnRobotButton->TabIndex = 8;
             this->solveOnRobotButton->Text = L"Solve on robot";
             this->solveOnRobotButton->TextAlign = System::Drawing::ContentAlignment::TopRight;
             this->solveOnRobotButton->UseVisualStyleBackColor = false;
@@ -363,7 +348,7 @@ namespace SolvingApplication {
             this->solutionLabel->Margin = System::Windows::Forms::Padding(0);
             this->solutionLabel->Name = L"solutionLabel";
             this->solutionLabel->Size = System::Drawing::Size(144, 46);
-            this->solutionLabel->TabIndex = 11;
+            this->solutionLabel->TabIndex = 0;
             this->solutionLabel->Text = L"Solution";
             this->solutionLabel->TextAlign = System::Drawing::ContentAlignment::TopRight;
             // 
@@ -375,8 +360,10 @@ namespace SolvingApplication {
             this->solutionTextbox->Location = System::Drawing::Point(9, 445);
             this->solutionTextbox->Multiline = true;
             this->solutionTextbox->Name = L"solutionTextbox";
+            this->solutionTextbox->ReadOnly = true;
             this->solutionTextbox->Size = System::Drawing::Size(546, 151);
-            this->solutionTextbox->TabIndex = 12;
+            this->solutionTextbox->TabIndex = 0;
+            this->solutionTextbox->Text = L"Solution will be printed here!!!";
             // 
             // saveSolutionButton
             // 
@@ -397,7 +384,7 @@ namespace SolvingApplication {
             this->saveSolutionButton->Margin = System::Windows::Forms::Padding(0);
             this->saveSolutionButton->Name = L"saveSolutionButton";
             this->saveSolutionButton->Size = System::Drawing::Size(187, 39);
-            this->saveSolutionButton->TabIndex = 13;
+            this->saveSolutionButton->TabIndex = 9;
             this->saveSolutionButton->Text = L"Save Solution";
             this->saveSolutionButton->TextAlign = System::Drawing::ContentAlignment::TopRight;
             this->saveSolutionButton->UseVisualStyleBackColor = false;
@@ -421,7 +408,7 @@ namespace SolvingApplication {
             this->reverseSolutionButton->Margin = System::Windows::Forms::Padding(0);
             this->reverseSolutionButton->Name = L"reverseSolutionButton";
             this->reverseSolutionButton->Size = System::Drawing::Size(208, 42);
-            this->reverseSolutionButton->TabIndex = 14;
+            this->reverseSolutionButton->TabIndex = 10;
             this->reverseSolutionButton->Text = L"Reverse Solution";
             this->reverseSolutionButton->TextAlign = System::Drawing::ContentAlignment::TopLeft;
             this->reverseSolutionButton->UseVisualStyleBackColor = false;
@@ -445,7 +432,7 @@ namespace SolvingApplication {
             this->randomizeCubeButton->Margin = System::Windows::Forms::Padding(0);
             this->randomizeCubeButton->Name = L"randomizeCubeButton";
             this->randomizeCubeButton->Size = System::Drawing::Size(211, 42);
-            this->randomizeCubeButton->TabIndex = 14;
+            this->randomizeCubeButton->TabIndex = 11;
             this->randomizeCubeButton->Text = L"Randomize Cube";
             this->randomizeCubeButton->TextAlign = System::Drawing::ContentAlignment::TopLeft;
             this->randomizeCubeButton->UseVisualStyleBackColor = false;
@@ -469,7 +456,7 @@ namespace SolvingApplication {
             this->closeButton->Margin = System::Windows::Forms::Padding(0);
             this->closeButton->Name = L"closeButton";
             this->closeButton->Size = System::Drawing::Size(30, 37);
-            this->closeButton->TabIndex = 15;
+            this->closeButton->TabIndex = 0;
             this->closeButton->Text = L"X";
             this->closeButton->TextAlign = System::Drawing::ContentAlignment::TopLeft;
             this->closeButton->UseVisualStyleBackColor = false;
