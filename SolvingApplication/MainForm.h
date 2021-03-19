@@ -44,10 +44,15 @@ namespace SolvingApplication {
 	private: System::Windows::Forms::Label^ scanFacesLabel;
     private: System::Windows::Forms::Button^ redScanButton;
     private: System::Windows::Forms::Button^ orangeScanButton;
-    private: System::Windows::Forms::Button^ yellowScanButton;
     private: System::Windows::Forms::Button^ whiteScanButton;
-    private: System::Windows::Forms::Button^ blueScanButton;
+
     private: System::Windows::Forms::Button^ greenScanButton;
+    private: System::Windows::Forms::Button^ yellowScanButton;
+
+
+    private: System::Windows::Forms::Button^ blueScanButton;
+
+
     private: System::Windows::Forms::Button^ solveCubeButton;
     private: System::Windows::Forms::Button^ solveOnRobotButton;
     private: System::Windows::Forms::Label^ solutionLabel;
@@ -76,10 +81,10 @@ namespace SolvingApplication {
             this->scanFacesLabel = (gcnew System::Windows::Forms::Label());
             this->redScanButton = (gcnew System::Windows::Forms::Button());
             this->orangeScanButton = (gcnew System::Windows::Forms::Button());
-            this->yellowScanButton = (gcnew System::Windows::Forms::Button());
             this->whiteScanButton = (gcnew System::Windows::Forms::Button());
-            this->blueScanButton = (gcnew System::Windows::Forms::Button());
             this->greenScanButton = (gcnew System::Windows::Forms::Button());
+            this->yellowScanButton = (gcnew System::Windows::Forms::Button());
+            this->blueScanButton = (gcnew System::Windows::Forms::Button());
             this->solveCubeButton = (gcnew System::Windows::Forms::Button());
             this->solveOnRobotButton = (gcnew System::Windows::Forms::Button());
             this->solutionLabel = (gcnew System::Windows::Forms::Label());
@@ -193,30 +198,6 @@ namespace SolvingApplication {
             this->orangeScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->orangeScanButton->UseVisualStyleBackColor = false;
             // 
-            // yellowScanButton
-            // 
-            this->yellowScanButton->BackColor = System::Drawing::Color::Transparent;
-            this->yellowScanButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-            this->yellowScanButton->FlatAppearance->BorderColor = System::Drawing::Color::Red;
-            this->yellowScanButton->FlatAppearance->BorderSize = 0;
-            this->yellowScanButton->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
-                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
-            this->yellowScanButton->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
-                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
-            this->yellowScanButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->yellowScanButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-                static_cast<System::Byte>(0)));
-            this->yellowScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)),
-                static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)));
-            this->yellowScanButton->Location = System::Drawing::Point(9, 315);
-            this->yellowScanButton->Margin = System::Windows::Forms::Padding(0);
-            this->yellowScanButton->Name = L"yellowScanButton";
-            this->yellowScanButton->Size = System::Drawing::Size(128, 38);
-            this->yellowScanButton->TabIndex = 5;
-            this->yellowScanButton->Text = L"Yellow";
-            this->yellowScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->yellowScanButton->UseVisualStyleBackColor = false;
-            // 
             // whiteScanButton
             // 
             this->whiteScanButton->BackColor = System::Drawing::Color::Transparent;
@@ -232,38 +213,14 @@ namespace SolvingApplication {
                 static_cast<System::Byte>(0)));
             this->whiteScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)),
                 static_cast<System::Int32>(static_cast<System::Byte>(190)));
-            this->whiteScanButton->Location = System::Drawing::Point(9, 277);
+            this->whiteScanButton->Location = System::Drawing::Point(9, 315);
             this->whiteScanButton->Margin = System::Windows::Forms::Padding(0);
             this->whiteScanButton->Name = L"whiteScanButton";
             this->whiteScanButton->Size = System::Drawing::Size(128, 38);
-            this->whiteScanButton->TabIndex = 4;
+            this->whiteScanButton->TabIndex = 5;
             this->whiteScanButton->Text = L"White";
             this->whiteScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->whiteScanButton->UseVisualStyleBackColor = false;
-            // 
-            // blueScanButton
-            // 
-            this->blueScanButton->BackColor = System::Drawing::Color::Transparent;
-            this->blueScanButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
-            this->blueScanButton->FlatAppearance->BorderColor = System::Drawing::Color::Red;
-            this->blueScanButton->FlatAppearance->BorderSize = 0;
-            this->blueScanButton->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
-                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
-            this->blueScanButton->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
-                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
-            this->blueScanButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
-            this->blueScanButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
-                static_cast<System::Byte>(0)));
-            this->blueScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)),
-                static_cast<System::Int32>(static_cast<System::Byte>(190)));
-            this->blueScanButton->Location = System::Drawing::Point(9, 240);
-            this->blueScanButton->Margin = System::Windows::Forms::Padding(0);
-            this->blueScanButton->Name = L"blueScanButton";
-            this->blueScanButton->Size = System::Drawing::Size(128, 37);
-            this->blueScanButton->TabIndex = 3;
-            this->blueScanButton->Text = L"Blue";
-            this->blueScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
-            this->blueScanButton->UseVisualStyleBackColor = false;
             // 
             // greenScanButton
             // 
@@ -280,14 +237,62 @@ namespace SolvingApplication {
                 static_cast<System::Byte>(0)));
             this->greenScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)),
                 static_cast<System::Int32>(static_cast<System::Byte>(190)));
-            this->greenScanButton->Location = System::Drawing::Point(9, 202);
+            this->greenScanButton->Location = System::Drawing::Point(9, 277);
             this->greenScanButton->Margin = System::Windows::Forms::Padding(0);
             this->greenScanButton->Name = L"greenScanButton";
             this->greenScanButton->Size = System::Drawing::Size(128, 38);
-            this->greenScanButton->TabIndex = 2;
+            this->greenScanButton->TabIndex = 4;
             this->greenScanButton->Text = L"Green";
             this->greenScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
             this->greenScanButton->UseVisualStyleBackColor = false;
+            // 
+            // yellowScanButton
+            // 
+            this->yellowScanButton->BackColor = System::Drawing::Color::Transparent;
+            this->yellowScanButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+            this->yellowScanButton->FlatAppearance->BorderColor = System::Drawing::Color::Red;
+            this->yellowScanButton->FlatAppearance->BorderSize = 0;
+            this->yellowScanButton->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
+                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
+            this->yellowScanButton->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
+                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
+            this->yellowScanButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->yellowScanButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->yellowScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)),
+                static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)));
+            this->yellowScanButton->Location = System::Drawing::Point(9, 240);
+            this->yellowScanButton->Margin = System::Windows::Forms::Padding(0);
+            this->yellowScanButton->Name = L"yellowScanButton";
+            this->yellowScanButton->Size = System::Drawing::Size(128, 37);
+            this->yellowScanButton->TabIndex = 3;
+            this->yellowScanButton->Text = L"Yellow";
+            this->yellowScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->yellowScanButton->UseVisualStyleBackColor = false;
+            // 
+            // blueScanButton
+            // 
+            this->blueScanButton->BackColor = System::Drawing::Color::Transparent;
+            this->blueScanButton->BackgroundImageLayout = System::Windows::Forms::ImageLayout::None;
+            this->blueScanButton->FlatAppearance->BorderColor = System::Drawing::Color::Red;
+            this->blueScanButton->FlatAppearance->BorderSize = 0;
+            this->blueScanButton->FlatAppearance->MouseDownBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
+                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
+            this->blueScanButton->FlatAppearance->MouseOverBackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(37)),
+                static_cast<System::Int32>(static_cast<System::Byte>(42)), static_cast<System::Int32>(static_cast<System::Byte>(45)));
+            this->blueScanButton->FlatStyle = System::Windows::Forms::FlatStyle::Flat;
+            this->blueScanButton->Font = (gcnew System::Drawing::Font(L"Segoe UI", 15, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+                static_cast<System::Byte>(0)));
+            this->blueScanButton->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(190)), static_cast<System::Int32>(static_cast<System::Byte>(190)),
+                static_cast<System::Int32>(static_cast<System::Byte>(190)));
+            this->blueScanButton->Location = System::Drawing::Point(9, 202);
+            this->blueScanButton->Margin = System::Windows::Forms::Padding(0);
+            this->blueScanButton->Name = L"blueScanButton";
+            this->blueScanButton->Size = System::Drawing::Size(128, 38);
+            this->blueScanButton->TabIndex = 2;
+            this->blueScanButton->Text = L"Blue";
+            this->blueScanButton->TextAlign = System::Drawing::ContentAlignment::MiddleLeft;
+            this->blueScanButton->UseVisualStyleBackColor = false;
             // 
             // solveCubeButton
             // 
@@ -479,10 +484,10 @@ namespace SolvingApplication {
             this->Controls->Add(this->solutionLabel);
             this->Controls->Add(this->solveOnRobotButton);
             this->Controls->Add(this->solveCubeButton);
-            this->Controls->Add(this->greenScanButton);
             this->Controls->Add(this->blueScanButton);
-            this->Controls->Add(this->whiteScanButton);
             this->Controls->Add(this->yellowScanButton);
+            this->Controls->Add(this->greenScanButton);
+            this->Controls->Add(this->whiteScanButton);
             this->Controls->Add(this->orangeScanButton);
             this->Controls->Add(this->redScanButton);
             this->Controls->Add(this->scanFacesLabel);
@@ -508,5 +513,5 @@ namespace SolvingApplication {
         private: System::Void closeButton_Click(System::Object^ sender, System::EventArgs^ e) {
             Application::Exit();
         }
-    };
+};
 }

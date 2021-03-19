@@ -34,8 +34,12 @@ ref class Cube{
 					for (int k = 0; k < GRID_SIZE; k++) {
 						this->cube[i, j, k] = INVALID;
 					}
+					this->temporaryFace[i, j] = INVALID;
 				}
 			}
+		}
+
+		System::Void getFace(int face_id, array<System::Int32, 2>^ face) {
 		}
 		/// <summary>
 		/// 
@@ -46,7 +50,7 @@ ref class Cube{
 				face = INVALID;
 				direction = L"INVALID";
 			}
-			movement::movement(movement const% object) {
+			movement(movement const% object) {
 				degree = object.degree;
 				face = object.face;
 				direction = object.direction;
@@ -58,45 +62,20 @@ ref class Cube{
 		array<System::Int32, 3>^ cube = gcnew array<System::Int32, 3>(FACES, GRID_SIZE, GRID_SIZE);
 		array<System::Int32, 2>^ temporaryFace = gcnew array<System::Int32, 2>(GRID_SIZE, GRID_SIZE);
 		/// <summary>
-		/// Copies one face to another.
-		/// </summary>
-		/// <param name="face_1"></param>
-		/// <param name="face_2"></param>
-		/// <returns></returns>
-		System::Void copyFace(array<System::Int32, 2>^ face_1, array<System::Int32, 2>^ face_2) {
-
-		}
-		/// <summary>
 		/// Moves the desired face in the given direction for given angle.
 		/// </summary>
 		/// <param name="moveFace"></param>
 		/// <returns></returns>
 		System::Void move(ref struct movement moveFace) {
 			if (moveFace.direction == L"Left") {
-				this->turnLeft(moveFace.face);
+				
 			}
 			else {
-				this->turnRight(moveFace.face);
+				
 			}
 			if (moveFace.degree == FULL_ROTATION) {
 				moveFace.degree -= FULL_ROTATION;
 				this->move(moveFace);
 			}
-		}
-		/// <summary>
-		/// Turns the given face of rubik'c cube Left.
-		/// </summary>
-		/// <param name="face"></param>
-		/// <returns></returns>
-		System::Void turnLeft(int face) {
-
-		}
-		/// <summary>
-		/// Turns the given face of rubik'c cube Right.
-		/// </summary>
-		/// <param name="face"></param>
-		/// <returns></returns>
-		System::Void turnRight(int face) {
-
 		}
 };
